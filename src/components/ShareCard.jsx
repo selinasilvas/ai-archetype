@@ -17,13 +17,16 @@ export function ShareCard({ archetype, dimensions, mode = 'quiz', profile = null
     if (!cardRef.current) return null
     setGenerating(true)
     try {
-      const dataUrl = await toPng(cardRef.current, {
+      const opts = {
         cacheBust: true,
         pixelRatio: 2,
         backgroundColor: '#0C0C14',
         width: CARD_W,
         height: CARD_H,
-      })
+      }
+      // First call forces images into cache; second call captures correctly
+      await toPng(cardRef.current, opts)
+      const dataUrl = await toPng(cardRef.current, opts)
       return dataUrl
     } catch (e) {
       console.error('Image generation failed:', e)
