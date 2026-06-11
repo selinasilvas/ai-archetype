@@ -6,25 +6,25 @@ Place your optimized illustration files here. Recommended specs:
 - Naming: match exactly as below
 
 ## Archetype Illustrations (11)
-- alchemist-distiller.png
-- alchemist-excavator.png
-- alchemist-catalyst.png
-- alchemist-cartographer.png
-- alchemist-forgemaster.png
-- alchemist-wayfinder.png
-- alchemist-transmuter.png
-- alchemist-apprentice.png
-- alchemist-guardian.png
-- alchemist-questioner.png
-- alchemist-keeper.png
+- alchemist-distiller.webp
+- alchemist-excavator.webp
+- alchemist-catalyst.webp
+- alchemist-cartographer.webp
+- alchemist-forgemaster.webp
+- alchemist-wayfinder.webp
+- alchemist-transmuter.webp
+- alchemist-apprentice.webp
+- alchemist-guardian.webp
+- alchemist-questioner.webp
+- alchemist-keeper.webp
 
 ## Relationship Profile Illustrations (6) — Phase 2
-- dynamic-cocreative.png
-- dynamic-mirror.png
-- dynamic-specialist.png
-- dynamic-coach.png
-- dynamic-utility.png
-- dynamic-explorer.png
+- dynamic-cocreative.webp
+- dynamic-mirror.webp
+- dynamic-specialist.webp
+- dynamic-coach.webp
+- dynamic-utility.webp
+- dynamic-explorer.webp
 
 ## To activate illustrations in the code:
 
@@ -32,7 +32,7 @@ Place your optimized illustration files here. Recommended specs:
 2. Open src/data/archetypes.js
 3. Add imports at the top:
    ```js
-   import distillerImg from '../assets/alchemist-distiller.png'
+   import distillerImg from '../assets/alchemist-distiller.webp'
    // ... etc for each
    ```
 4. Replace `image: null` with `image: distillerImg` for each archetype

@@ -72,7 +72,7 @@ export function ShareCard({ archetype, dimensions, mode = 'quiz', profile = null
     }
     try {
       const blob = await (await fetch(dataUrl)).blob()
-      const file = new File([blob], `my-ai-archetype.png`, { type: 'image/png' })
+      const file = new File([blob], `my-ai-archetype.webp`, { type: 'image/png' })
       await navigator.share({
         title: `I'm ${data.name}`,
         text: `I took The Alchemists quiz and I'm ${data.name}: "${data.tagline}"`,
